@@ -39,7 +39,7 @@ const fillFormField = () => {
 
 fillFormField();
 
-feedbackForm.addEventListener('change', evt => {
+feedbackForm.addEventListener('input', evt => {
   const { target: formField } = evt;
 
   const fieldName = formField.name;

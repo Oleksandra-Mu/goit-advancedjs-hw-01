@@ -1,14 +1,7 @@
-:root {
-    --font-family: "Montserrat", sans-serif;
-    --items: 3;
-    --text-color: #2e2f42;
-}
+@import url('./container.css');
+@import url('./base.css');
+@import url('./reset.css');
 
-body {
-    font-family: var(--font-family);
-    letter-spacing: 0.04em;
-    color: var(--text-color);
-}
 .feedback-form {
     display: flex;
     flex-direction: column;
@@ -41,6 +34,7 @@ body {
     color: var(--text-color);
     border: 1px solid #808080;
     border-radius: 4px;
+    font-family: var(--font-family);
 }
 
 .feedback-form input:hover {
@@ -60,6 +54,7 @@ body {
     color: var(--text-color);
     border: 1px solid #808080;
     border-radius: 4px;
+    font-family: var(--font-family);
 }
 
 .feedback-form textarea:hover {
