@@ -38,6 +38,6 @@
   transform: scale(1.05);
 }
 
-.basicLightbox {
+.sl-wrapper {
   background-color: rgba(46, 47, 66, 0.8);
 }
