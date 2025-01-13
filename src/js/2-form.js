@@ -33,8 +33,6 @@ const fillFormField = () => {
     feedbackForm.elements[key].value = formDataFromLS[key];
     formData[key] = formDataFromLS[key];
   });
-
-  console.log(formData);
 };
 
 fillFormField();
@@ -57,8 +55,10 @@ feedbackForm.addEventListener('submit', evt => {
 
   if (formDataValues.some(el => el === '')) {
     alert('Fill please all fields');
+    return;
   }
 
+  console.log(formData);
   evt.currentTarget.reset();
   localStorage.removeItem(localStorageKey);
 });
